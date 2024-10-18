@@ -1,16 +1,16 @@
-import React from 'react'
-import News from './Components/News'
-import { Provider } from 'react-redux'
-import { store } from './Redux/Shop'
+import React from "react";
+import { HashRouter, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
-    <Provider store={store}>
-
-   <div className=''>
-    <News/>
-   </div>
-   </Provider>
-  )
+    <div className="">
+      <HashRouter>
+        <Routes>
+          <Route path="" element=""/>
+        </Routes>
+      </HashRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
